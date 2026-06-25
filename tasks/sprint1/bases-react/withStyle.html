@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+  </head>
+  <body>
+    <!-- Корневой элемент, точка входа в приложение -->
+    <div id="root"></div>
+
+    <script>
+      const root = ReactDOM.createRoot(document.querySelector("#root"));
+
+      const element = React.createElement("section", null, [
+        React.createElement(
+          "div",
+          null,
+          [
+            React.createElement("h1", null, "Заголовок"),
+            React.createElement("h2", null, "Подзаголовок"),
+          ],
+          React.createElement(
+            "div",
+            null,
+            React.createElement("p", null, "Параграф"),
+          ),
+        ),
+      ]);
+
+      //   {
+      //     element: "section",
+      //     children: [
+      //       {
+      //         element: "div",
+      //         children: [
+      //           {
+      //             element: "h1",
+      //             children: "Заголовок",
+      //           },
+      //           {
+      //             element: "h2",
+      //             children: "Подзаголовок",
+      //           },
+      //         ],
+      //       },
+      //       {
+      //         element: "div",
+      //         children: [
+      //           {
+      //             element: "p",
+      //             children: "Параграф",
+      //           },
+      //         ],
+      //       },
+      //     ],
+      //   };
+
+      root.render(element);
+    </script>
+  </body>
+</html>

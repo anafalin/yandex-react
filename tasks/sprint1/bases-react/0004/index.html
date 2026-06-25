@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://code.s3.yandex.net/react/libs/react-18/react.development.js"></script>
+    <script src="https://code.s3.yandex.net/react/libs/react-18/react-dom.development.js"></script>
+    <script src="https://code.s3.yandex.net/react/libs/react-18/babel.min.js"></script>
+    <style type="text/css">
+      .item {
+        width: 160px;
+        height: 160px;
+        margin: auto;
+        border: 2px solid #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/jsx">
+    const root = ReactDOM.createRoot(document.querySelector('#root'));
+    root.render(
+        <div className='content'>
+          <div class="item">Квадрат</div>
+          <div class="item" style={{borderRadius: 30}}>Полуквадрат</div>
+          <div class="item" style={{borderRadius: '50%'}}>Круг</div>
+      </div>
+      );
+    </script>
+  </body>
+</html>

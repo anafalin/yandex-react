@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+  </head>
+  <body>
+    <!-- Корневой элемент, точка входа в приложение -->
+    <div id="root"></div>
+
+    <script>
+        // Создание корня React-приложения
+        // Первый элемент - указатель на DOM-элеменет, в котором отображается интерфейс
+        const root = ReactDOM.createRoot(document.querySelector('#root'));
+
+        // метод корня, который обрабатывает JSX и отрисовывает рехультат
+        // root.render(
+        //     React.createElement("h1", null, "Привет, Мир!")
+        // );
+
+        function timer() {
+            const element = React.createElement(
+                "div",
+                null,
+                React.createElement("h1", null, "Текущее время:"),
+                React.createElement("h2", null, new Date().toLocaleTimeString()),
+            );
+            root.render(element); // перерисовывать указанный элемент
+        }
+        
+        setInterval(timer, 1000); // каждую секунду вызывать функцию timer
+    </script>
+  </body>
+</html>
