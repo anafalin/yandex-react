@@ -1,0 +1,17 @@
+.wrapperCard {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 50%;
+  align-items: center;
+}
+
+.imgWrapper {
+  width: 240px;
+  height: 120px;
+  display: flex;
+}
+
+.priceWrapper {
+  display: flex;
+  gap: 4px;
+}

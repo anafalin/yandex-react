@@ -1,5 +1,11 @@
 .app {
   width: 1280px;
-  margin: auto;
+  margin: 0 auto;
   padding: 30px;
+}
+
+.mainWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
 }
