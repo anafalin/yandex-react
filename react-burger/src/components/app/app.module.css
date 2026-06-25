@@ -1,0 +1,13 @@
+.app {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.mainWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin: 0 0 0 50px;
+  width: 1240px;
+}
