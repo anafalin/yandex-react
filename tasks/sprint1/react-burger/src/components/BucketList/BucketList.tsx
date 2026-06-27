@@ -14,7 +14,7 @@ const BucketList = (props: BucketListProps) => {
         <BucketItem
           key={item._id}
           title={item.name}
-          price={item.price}
+          proteins={item.proteins}
           image={item.image_mobile}
           type={item.type}
         />

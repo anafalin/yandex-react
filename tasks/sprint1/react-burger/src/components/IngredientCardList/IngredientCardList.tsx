@@ -12,13 +12,13 @@ const IngredientCardList = (props: IngredientCardListProps) => {
 
   return (
     <>
-      <h3>{title}</h3>
+      <h3 className="text_type_main-medium">{title}</h3>
       <div className={style.listWrapper}>
         {items.map((item) => (
           <IngredientCard
             key={item._id}
             title={item.name}
-            price={item.price}
+            proteins={item.proteins}
             image={item.image}
           />
         ))}

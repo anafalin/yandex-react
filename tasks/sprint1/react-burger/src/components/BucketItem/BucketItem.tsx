@@ -9,13 +9,13 @@ import {
 
 type BuckerItemProps = {
   title: string;
-  price: number;
+  proteins: number;
   image: string;
   type: string;
 };
 
 const BucketItem = (props: BuckerItemProps) => {
-  const { title, price, image, type } = props;
+  const { title, proteins, image, type } = props;
 
   return (
     <div className={style.itemCard}>
@@ -29,8 +29,8 @@ const BucketItem = (props: BuckerItemProps) => {
       <div className={`${style.rowCard}`}>
         <img src={image} alt={title} />
         <p className={`text_type_main-larde ${style.price}`}>{title}</p>
-        <p className={`text_type_digits-default ${style.priceWrapper}`}>
-          {price} <CurrencyIcon type="primary" className="pl-1" />
+        <p className={`text_type_digits-default ${style.proteinsWrapper}`}>
+          {proteins} <CurrencyIcon type="primary" className="pl-1" />
         </p>
         {type === ProductType.bun ? (
           <LockIcon type="secondary" />

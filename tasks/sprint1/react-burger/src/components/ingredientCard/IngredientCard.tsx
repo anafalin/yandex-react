@@ -3,17 +3,17 @@ import style from "./ingredientCard.module.css";
 
 type IngredientCardProps = {
   title: string;
-  price: number;
+  proteins: number;
   image: string;
 };
 
 const IngredientCard = (props: IngredientCardProps) => {
-  const { title, price, image } = props;
+  const { title, proteins, image } = props;
   return (
     <div className={style.wrapperCard}>
       <h4>{title}</h4>
-      <span className={`text_type_digits-default ${style.priceWrapper}`}>
-        {price}
+      <span className={`text_type_digits-default ${style.proteinsWrapper}`}>
+        {proteins}
         <CurrencyIcon type="primary" />
       </span>
       <div className={style.imgWrapper}>

@@ -1,8 +1,16 @@
 .wrapperCard {
   display: flex;
   flex-direction: column-reverse;
+  justify-content: flex-end;
   width: 50%;
   align-items: center;
+  gap: 4px;
+}
+
+.wrapperCard h4 {
+  text-align: center;
+  align-items: center;
+  vertical-align: middle;
 }
 
 .imgWrapper {
@@ -11,7 +19,7 @@
   display: flex;
 }
 
-.priceWrapper {
+.proteinsWrapper {
   display: flex;
   gap: 4px;
 }
