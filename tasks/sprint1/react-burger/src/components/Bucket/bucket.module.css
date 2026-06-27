@@ -1,0 +1,16 @@
+.bucket {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 600px;
+  margin-top: 100px;
+}
+
+.order {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  justify-content: end;
+  margin-top: 40px;
+  align-items: center;
+}

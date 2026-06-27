@@ -1,7 +1,8 @@
 import React from "react";
 import style from "./app.module.css";
 import AppHeader from "../appHeader/AppHeader";
-import BurgerIngredients from "../ingredients/Ingredients";
+import Ingredients from "../ingredients/Ingredients";
+import Bucket from "../Bucket/Bucket";
 
 class App extends React.Component {
   render() {
@@ -9,7 +10,8 @@ class App extends React.Component {
       <div className={`text_type_main-default ${style.app}`}>
         <AppHeader />
         <main className={style.mainWrapper}>
-          <BurgerIngredients />
+          <Ingredients />
+          <Bucket />
         </main>
       </div>
     );

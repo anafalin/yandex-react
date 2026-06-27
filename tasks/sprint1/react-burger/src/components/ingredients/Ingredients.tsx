@@ -3,7 +3,7 @@ import { products } from "../utils/data";
 import IngredientCardList from "../IngredientCardList/IngredientCardList";
 import { ProductType, ProductTypeText } from "../utils/types";
 
-const BurgerIngredients = () => {
+const Ingredients = () => {
   const buns = products.filter((p) => p.type === ProductType.bun);
   const main = products.filter((p) => p.type === ProductType.main);
   const sauce = products.filter((p) => p.type === ProductType.sauce);
@@ -41,4 +41,4 @@ const BurgerIngredients = () => {
   );
 };
 
-export default BurgerIngredients;
+export default Ingredients;

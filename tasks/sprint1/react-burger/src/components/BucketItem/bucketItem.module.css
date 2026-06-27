@@ -1,0 +1,36 @@
+.itemCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.rowCard {
+  display: flex;
+  flex-direction: row;
+  margin-left: 24px;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 32px;
+  gap: 20px;
+}
+
+.rowCard img {
+  width: 80px;
+  height: 40px;
+}
+
+.priceWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.notIcon {
+  width: 24px;
+  height: 24px;
+  border: none;
+}
+
+.price {
+  flex-grow: 2;
+}
