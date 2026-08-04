@@ -1,0 +1,97 @@
+html {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+div#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.page {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.todolist {
+  width: 800px;
+  min-height: 100vh;
+  margin: 40px auto 0 auto;
+}
+
+.todolist__list {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.todolist__form {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  column-gap: 10px;
+  height: 50px;
+}
+
+.todolist__form-input {
+  border-radius: 5px;
+  flex-grow: 2;
+  padding-left: 10px;
+}
+
+.todolist__form-submit {
+  min-width: 180px;
+  font-weight: bold;
+}
+
+.todolist__tasks {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.todolist__item {
+  box-sizing: border-box;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  border-color: grey;
+  border-width: 2px;
+  border-style: solid;
+  padding: 0 20px;
+}
+
+.todolist__item-text {
+  color: white;
+  font-weight: bold;
+}
+
+.todolist__item-del {
+
+}

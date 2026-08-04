@@ -1,0 +1,83 @@
+.app {
+  font-size: 20px;
+  line-height: 32px;
+  color: #ffffff;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(314.62deg, #001A53 0%, #2D4F6D 100.66%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.trafficContainer {
+  max-width: 1024px;
+  max-height: 1024px;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 68px 82px;
+}
+
+.ship {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(15px 15px 0 rgba(0, 0, 0, 0.48));
+}
+
+.waves {
+  position: absolute;
+  bottom: -15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+}
+
+.smallWave {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  animation: shockSmallWave 4s infinite;
+  animation-direction: alternate;
+}
+
+.bigWave {
+  animation: shockBigWave 8s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes shockSmallWave {
+  from {
+    transform: translate(-50%, -30%);
+  }
+  to {
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes shockBigWave {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(20%);
+  }
+}
+
+@media screen and (max-width: 1024px),
+screen and (max-height: 1024px) {
+  .trafficContainer {
+    padding: 25px 20px 15px;
+  }
+}

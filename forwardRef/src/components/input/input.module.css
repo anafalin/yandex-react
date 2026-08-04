@@ -1,0 +1,15 @@
+.input {
+  width: 100%;
+  padding: 16px 145px 16px 24px;
+  background-color: transparent;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 100px;
+}
+
+.input:hover,
+.input:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 10px 0 #b5d2e7;
+}

@@ -1,0 +1,38 @@
+.root {
+  min-width: 480px;
+}
+
+.form {
+  position: relative;
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  margin: 0;
+  padding: 16px 24px;
+  background: #000000;
+  border: 1px solid #000000;
+  border-radius: 50px;
+  color: #FFFFFF;
+}
+
+.button:hover,
+.button:focus {
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 0 10px 0 #B5D2E7;
+}
+
+.message {
+  min-height: 3rem;
+  margin: 24px 0;
+  text-align: center;
+}
+
+.message > span {
+  display: inline-block;
+  width: 100%;
+}

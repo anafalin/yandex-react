@@ -1,0 +1,24 @@
+html, body {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 20px;
+  background: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: #333333;
+}
+
+input[type="checkbox"] {
+  margin-right: 14px;
+}
+
+body.with-bg {
+  background: url(https://code.s3.yandex.net/web-code/mountain.jpg) no-repeat center center;
+  background-size: cover;
+  color: white;
+}

@@ -1,0 +1,40 @@
+.root {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.arrow {
+  margin-left: auto;
+  transition: 4s;
+  transition-timing-function: linear;
+  z-index: 2;
+}
+
+.trafficBarContainer {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 30px;
+  margin-top: auto;
+}
+
+.trafficBar {
+  min-height: 32px;
+  border-radius: 20px;
+  display: block;
+  z-index: 2;
+}
+
+@media screen and (max-height: 700px),
+screen and (max-width: 612px) {
+  .trafficBarContainer {
+    padding: 15px;
+  }
+
+  .trafficBar {
+    min-height: 16px;
+  }
+}

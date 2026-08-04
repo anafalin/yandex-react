@@ -1,0 +1,18 @@
+.btn {
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.container {
+  width: 400px;
+  padding: 30px;
+  border: 3px solid #ff6b6b;
+  border-radius: 12px;
+  background: #fff5f5;
+  cursor: pointer;
+}
